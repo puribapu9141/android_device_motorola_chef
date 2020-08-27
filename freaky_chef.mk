@@ -21,8 +21,7 @@ $(call inherit-product, vendor/freaky/config/common_full_phone.mk)
 CUSTOM_BUILD_TYPE := OFFICIAL
 
 PRODUCT_PROPERTY_OVERRIDES += \
-
-ro.build.user=Amith
+    ro.build.user=PM
     
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
@@ -67,7 +66,7 @@ TARGET_RECOVERY_FSTAB := device/motorola/sdm660-common/rootdir/etc/fstab.qcom
 
 # Device identifiers
 PRODUCT_DEVICE := chef
-PRODUCT_NAME := lineage_chef
+PRODUCT_NAME := freaky_chef
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := Motorola One Power
 PRODUCT_MANUFACTURER := Motorola
